@@ -40,6 +40,7 @@ main h1 {
   display: flex;
   justify-content: center;
   margin: 20px;
+  cursor: pointer;
 }
 .tarjetas img {
   width: 90%;
