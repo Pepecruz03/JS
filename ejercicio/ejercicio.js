@@ -1,3 +1,4 @@
+function edad (){
 var edad = prompt("Por favor escribe tu edad");
 
 if (edad >= 0 && edad <= 5) {
@@ -15,27 +16,30 @@ if (edad >= 0 && edad <= 5) {
 } else {
   alert("La edad no es valida (Eres una imposibilidad en este mundo)");
 }
+}
 
-
+function dia (){
 var dia = prompt("ingresa un dia y te notificare si es de la semana o del fin");
 
 if(dia == "lunes" || dia == "martes" || dia == "miercoles" || dia =="jueves" || dia == "viernes") {
     alert("Es un dia de la semana")
-} else if (dia == "sabado" || "domingo") {
+} else if (dia == "sabado" || dia == "domingo") {
     alert("Es un fin de semana") 
 } else {
     alert("Por favor ingrese un dia de la semana valido") ;
 }
-
-
+}
+function parImpar (){
 var numero = prompt(" Buenas por favor ingrese un numero");
 
 if (numero>0 && (numero % 2 > 0)) {
-    alert(`Hola, el numero ${numero} es inpar`);
+    alert(`Hola, el numero ${numero} es impar`);
 } else {
     alert(`Hola, el numero ${numero} es par`);
 }
+}
 
+function nombre (){
 var nombre = prompt("ingresa tu nombre");
 var edad = prompt(`Muy bien ${nombre} por favor ingresa tu edad`);
 
@@ -44,3 +48,4 @@ if (nombre == "juan" && edad == 20){
     } else {
     alert (`Esto es vergonzoso ${nombre} pero lamentablemente no puedes ingresar`)
     }
+  }   

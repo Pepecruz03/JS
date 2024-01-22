@@ -9,9 +9,8 @@
     width: 90%;
     height: 200px;
   }
-  footer {
-    display: flex;
-    justify-content: center;
+  #location {
+    display: block;
   }
 }
 * {
@@ -53,4 +52,6 @@ main h1 {
 
 footer {
   font-family: "Caveat", cursive;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
