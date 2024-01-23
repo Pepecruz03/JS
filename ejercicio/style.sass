@@ -1,4 +1,5 @@
 @import ./_responsive
+@import ./_mixin
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap')
 
 *
@@ -7,30 +8,36 @@
     color: white
     background-color: black
     
-main
-    h1
-        display: flex
-        justify-content: center
-        padding: 20px 0px 0px 0px
-        font-family: 'Caveat', cursive
+.titulos
+    display: flex
+    justify-content: center
+    padding: 20px 0px 50px 0px
+    font-family: 'Caveat', cursive
+
+
 .container
     display: grid
     padding: 20px
 
-.tarjetas
-    display: flex
-    flex-direction: column
-    justify-items: center
-    align-items: center
+.tarjetas 
+    @include imagen()
+    
+    
     button
-        width: 30%
-        display: flex
-        justify-content: center
-        margin: 20px
-        cursor: pointer
+        @include botones()
+        
     img
         width: 90%
         height: 300px
+
+.tarjetas1
+    @include imagen()
+    button
+        @include botones()
+    img
+        width: 90%
+        height: 200px
+    
 
 footer
     font-family: 'Caveat', cursive

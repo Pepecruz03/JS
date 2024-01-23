@@ -48,4 +48,34 @@ if (nombre == "juan" && edad == 20){
     } else {
     alert (`Esto es vergonzoso ${nombre} pero lamentablemente no puedes ingresar`)
     }
-  }   
+}   
+
+function mayuscula (){
+    let nombre = prompt ("Por Favor ingresa una palabra")
+    alert(nombre.toUpperCase());
+}
+
+function minuscula (){
+  let nombre = prompt ("Por Favor ingresa una palabra en MAYUSCULA")
+  alert(nombre.toLowerCase());
+}
+
+function caracteres (){
+  let nombre = prompt ("Por Favor ingresa una palabra y te dire cuantos caracteres tiene")
+  alert(nombre.length);
+}
+
+function primera (){
+  let nombre = prompt ("Por Favor ingresa una palabra y te dire por que letra empieza")
+  alert(nombre.charAt(0));
+}
+
+function ultima (){
+  let nombre = prompt ("Por Favor ingresa una palabra y te dire en que letra termina")
+  alert(nombre.charAt(nombre.length - 1));
+}
+
+function primeraOut (){
+  let nombre = prompt ("Por Favor ingresa una palabra y le quitare la primera letra")
+  alert(nombre.slice (1));
+}
