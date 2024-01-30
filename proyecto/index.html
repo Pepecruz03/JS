@@ -5,18 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="responsive.css">
         <title>Piedra | Papel | Tijerass</title>
     </head>
     <body>
         <h1>Piedra | Papel | Tijeras</h1>
-    <div class="dividir">
+        <main>
+        <div class="dividir">
            <div class="centrar"> <h2>Elije un ataque</h2> </div>
-            <div>
+            <div class="imagenes">
+                <div class="centrar">
                 <img id="btn-piedra" class="btn-ataques" src="img/Piedra.PNG" alt="">
                 <img id="btn-papel" class="btn-ataques" src="img/Papel.PNG" alt="">
-                <div class="centrar">
-                <img id="btn-tijeras" class="btn-ataques"  src="img/Tijeras.PNG" alt="">
                 </div>
+                <div id="tijera-sola"><img id="btn-tijeras" class="btn-ataques"  src="img/Tijeras.PNG" alt=""></div>
             </div>
     </div>
     <div class="dividir2">
@@ -29,7 +31,7 @@
             <div id="img-ataque-pc" class="caja-batala"><!--<img class="img-batalla" src="img/Piedra.PNG" alt="">--></div>
         </div>
     </div>
-        
+    </main>
         <script src="app.js"></script>
     </body>
 </html>
